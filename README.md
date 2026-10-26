@@ -27,5 +27,6 @@ Botão flutuante de ligação no canto inferior esquerdo e de WhatsApp no canto 
 
 ## Como visualizar
 
-Abra `index.html` no navegador ou rode `python3 -m http.server` nesta pasta e acesse http://localhost:8000.
+Os links internos usam URLs sem `.html` (ex.: `/servicos`). Na Vercel isso é feito pelo `vercel.json` (`cleanUrls`).
+Para testar localmente, use um servidor com suporte a URLs limpas, como `npx serve`.
 Para publicar, basta enviar os arquivos para qualquer hospedagem estática (Vercel, Netlify, GitHub Pages, Hostinger etc.).
