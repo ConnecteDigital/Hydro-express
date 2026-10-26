@@ -9,6 +9,11 @@
   --agua: #18b6d6;
   --laranja: #ff7a00;
   --laranja-escuro: #e56d00;
+  --vermelho: #e3262b;
+  --vermelho-escuro: #c41c21;
+  --azul-logo: #011e4d;
+  --azul-logo-claro: #02347a;
+  --azul-logo-destaque: #2ea8ff;
   --verde-whats: #25d366;
   --texto: #1f2a37;
   --texto-suave: #5b6b7f;
@@ -164,12 +169,12 @@ p {
 }
 
 .btn--ligar {
-  background: var(--laranja);
+  background: var(--vermelho);
   color: #fff;
 }
 
 .btn--ligar:hover {
-  background: var(--laranja-escuro);
+  background: var(--vermelho-escuro);
 }
 
 .btn--contorno {
@@ -200,7 +205,7 @@ p {
 /* ---------- Barra superior ---------- */
 
 .topo-info {
-  background: var(--azul-escuro);
+  background: #00122e;
   color: #cfe0f5;
   font-size: 0.85rem;
 }
@@ -247,9 +252,8 @@ p {
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(255, 255, 255, 0.97);
-  backdrop-filter: blur(8px);
-  border-bottom: 1px solid var(--borda);
+  background: linear-gradient(90deg, var(--azul-logo) 0%, var(--azul-logo-claro) 100%);
+  border-bottom: 1px solid rgba(46, 168, 255, 0.25);
 }
 
 .cabecalho .container {
@@ -268,6 +272,16 @@ p {
   font-size: 1.5rem;
   color: var(--azul-escuro);
   text-decoration: none !important;
+}
+
+.logo__nome {
+  font-size: 1.6rem;
+  color: #fff;
+  letter-spacing: -0.01em;
+}
+
+.logo__nome span {
+  color: var(--azul-logo-destaque);
 }
 
 .logo img {
@@ -296,7 +310,7 @@ p {
   margin: 0;
   padding: 0;
   display: flex;
-  gap: 6px;
+  gap: 2px;
   align-items: center;
 }
 
@@ -304,26 +318,27 @@ p {
   display: block;
   padding: 10px 14px;
   border-radius: 10px;
-  color: var(--texto);
+  color: #e6effa;
   font-weight: 600;
-  font-size: 0.95rem;
+  font-size: 0.92rem;
+  white-space: nowrap;
   text-decoration: none;
 }
 
 .menu a:hover,
 .menu a[aria-current="page"] {
-  color: var(--azul);
-  background: var(--azul-claro);
+  color: #fff;
+  background: rgba(255, 255, 255, 0.12);
 }
 
 .menu .menu__cta {
-  background: var(--laranja);
+  background: var(--vermelho);
   color: #fff;
   margin-left: 8px;
 }
 
 .menu .menu__cta:hover {
-  background: var(--laranja-escuro);
+  background: var(--vermelho-escuro);
   color: #fff;
 }
 
@@ -333,7 +348,7 @@ p {
   border: 0;
   padding: 8px;
   cursor: pointer;
-  color: var(--azul-escuro);
+  color: #fff;
 }
 
 .menu-toggle svg {
@@ -341,7 +356,7 @@ p {
   height: 30px;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1140px) {
   .menu-toggle {
     display: block;
   }
@@ -351,8 +366,7 @@ p {
     top: 100%;
     left: 0;
     right: 0;
-    background: #fff;
-    border-bottom: 1px solid var(--borda);
+    background: var(--azul-logo);
     box-shadow: var(--sombra);
     max-height: 0;
     overflow: hidden;
@@ -424,6 +438,29 @@ p {
   color: #e6effa;
   max-width: 680px;
   margin: 0 auto 30px;
+}
+
+.hero__texto--celular {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  .hero__texto--desktop {
+    display: none;
+  }
+
+  .hero__texto--celular {
+    display: block;
+  }
+
+  .logo__nome {
+    font-size: 1.3rem;
+  }
+
+  .logo img {
+    width: 60px;
+    height: 60px;
+  }
 }
 
 .hero .botoes,
@@ -1329,11 +1366,11 @@ p {
 
 .flutuante--ligar {
   left: 22px;
-  background: var(--laranja);
+  background: var(--vermelho);
 }
 
 .flutuante--ligar::before {
-  background: rgba(255, 122, 0, 0.5);
+  background: rgba(227, 38, 43, 0.5);
 }
 
 .flutuante__rotulo {
