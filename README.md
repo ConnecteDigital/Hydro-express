@@ -16,7 +16,7 @@ Site estático (HTML + CSS + JS puro), sem dependências e sem etapa de build.
 ## Contatos usados no site
 
 - WhatsApp: (11) 97054-0360 → `https://wa.me/5511970540360`
-- Ligação: 011 97054-0360 → `tel:+5511970540360`
+- Ligação: 011 97054-0360 → `tel:011970540360`
 
 Botão flutuante de ligação no canto inferior esquerdo e de WhatsApp no canto inferior direito, em todas as páginas.
 
