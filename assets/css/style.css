@@ -453,6 +453,26 @@ p {
     display: block;
   }
 
+  .hero .hero__selos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    margin-top: 24px;
+    font-size: 0.72rem;
+    line-height: 1.3;
+  }
+
+  .hero .hero__selos li {
+    flex-direction: column;
+    gap: 4px;
+    text-align: center;
+  }
+
+  .hero .hero__selos svg {
+    width: 18px;
+    height: 18px;
+  }
+
   .logo__nome {
     font-size: 1.3rem;
   }
