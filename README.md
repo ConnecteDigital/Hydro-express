@@ -22,6 +22,7 @@ Botão flutuante de ligação no canto inferior esquerdo e de WhatsApp no canto 
 
 ## Antes de publicar
 
+- As imagens ficam em `assets/img/` (`logo.webp`, `hero.webp` e `servico-*.jpg`).
 - Substitua os depoimentos de exemplo (`depoimentos.html` e a seção na `index.html`) por avaliações reais de clientes.
 
 ## Como visualizar

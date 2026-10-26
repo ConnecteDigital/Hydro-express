@@ -256,7 +256,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 76px;
+  height: 88px;
 }
 
 .logo {
@@ -270,13 +270,15 @@ p {
   text-decoration: none !important;
 }
 
-.logo svg {
-  width: 40px;
-  height: 40px;
+.logo img {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
 }
 
-.logo__nome span {
-  color: var(--agua);
+.logo--rodape img {
+  width: 120px;
+  height: 120px;
 }
 
 @media (max-width: 640px) {
@@ -345,8 +347,10 @@ p {
   }
 
   .menu {
-    position: fixed;
-    inset: 76px 0 auto 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
     background: #fff;
     border-bottom: 1px solid var(--borda);
     box-shadow: var(--sombra);
@@ -379,9 +383,11 @@ p {
   overflow: hidden;
   color: #fff;
   background:
-    radial-gradient(circle at 85% 20%, rgba(24, 182, 214, 0.45), transparent 45%),
-    linear-gradient(135deg, #0a2540 0%, #0b4a9e 60%, #0b5ed7 100%);
-  padding: 90px 0 120px;
+    linear-gradient(180deg, rgba(10, 37, 64, 0.82) 0%, rgba(11, 74, 158, 0.72) 100%),
+    url("../img/hero.webp") center / cover no-repeat,
+    #0a2540;
+  padding: 110px 0 140px;
+  text-align: center;
 }
 
 .hero::after {
@@ -396,7 +402,8 @@ p {
 
 .hero .container {
   display: grid;
-  grid-template-columns: minmax(0, 760px);
+  grid-template-columns: minmax(0, 860px);
+  justify-content: center;
   gap: 50px;
   align-items: center;
   position: relative;
@@ -413,10 +420,15 @@ p {
 }
 
 .hero__texto {
-  font-size: 1.12rem;
-  color: #d8e7fa;
-  max-width: 580px;
-  margin-bottom: 28px;
+  font-size: 1.15rem;
+  color: #e6effa;
+  max-width: 680px;
+  margin: 0 auto 30px;
+}
+
+.hero .botoes,
+.hero__selos {
+  justify-content: center;
 }
 
 .hero__selos {
@@ -558,6 +570,61 @@ p {
   gap: 6px;
 }
 
+/* ---------- Cards de serviço ---------- */
+
+.grid-servicos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 26px;
+}
+
+.card--servico {
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  width: calc((100% - 52px) / 3);
+}
+
+.card__img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+
+.card__corpo {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.card__corpo p {
+  flex: 1;
+}
+
+.card__corpo .btn {
+  width: 100%;
+  margin-bottom: 14px;
+}
+
+.card__corpo .card__link {
+  align-self: center;
+}
+
+@media (max-width: 960px) {
+  .card--servico {
+    width: calc((100% - 26px) / 2);
+  }
+}
+
+@media (max-width: 640px) {
+  .card--servico {
+    width: 100%;
+  }
+}
+
 /* ---------- Números ---------- */
 
 .numeros {
@@ -671,7 +738,7 @@ p {
   align-items: center;
   padding: 70px 0;
   border-bottom: 1px solid var(--borda);
-  scroll-margin-top: 90px;
+  scroll-margin-top: 100px;
 }
 
 .servico:last-child {
@@ -694,9 +761,14 @@ p {
   box-shadow: var(--sombra-forte);
 }
 
-.servico__arte svg {
-  width: 42%;
-  height: auto;
+.servico__arte {
+  overflow: hidden;
+}
+
+.servico__arte img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .servico h2 {
