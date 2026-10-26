@@ -396,7 +396,7 @@ p {
 
 .hero .container {
   display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
+  grid-template-columns: minmax(0, 760px);
   gap: 50px;
   align-items: center;
   position: relative;
@@ -444,33 +444,6 @@ p {
   list-style: none;
   margin: 0;
   padding: 0;
-}
-
-.hero__card {
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  border-radius: 22px;
-  padding: 30px;
-  backdrop-filter: blur(6px);
-}
-
-.hero__card h2 {
-  color: #fff;
-  font-size: 1.4rem;
-}
-
-.hero__card p {
-  color: #d8e7fa;
-}
-
-.hero__card .btn {
-  width: 100%;
-  margin-top: 10px;
-}
-
-.hero__ilustracao {
-  margin: 0 auto 20px;
-  width: 170px;
 }
 
 .page-hero {
@@ -1274,7 +1247,7 @@ p {
 }
 
 .flutuante--whats {
-  left: 22px;
+  right: 22px;
   background: var(--verde-whats);
 }
 
@@ -1283,7 +1256,7 @@ p {
 }
 
 .flutuante--ligar {
-  right: 22px;
+  left: 22px;
   background: var(--laranja);
 }
 
@@ -1308,8 +1281,8 @@ p {
   transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
-.flutuante--whats .flutuante__rotulo { left: 0; }
-.flutuante--ligar .flutuante__rotulo { right: 0; }
+.flutuante--whats .flutuante__rotulo { right: 0; }
+.flutuante--ligar .flutuante__rotulo { left: 0; }
 
 .flutuante:hover .flutuante__rotulo,
 .flutuante:focus-visible .flutuante__rotulo {
