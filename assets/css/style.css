@@ -1,5 +1,5 @@
 /* =========================================================
-   HidroExpress — Desentupidora 24h na Grande São Paulo
+   Master Limp — Desentupidora 24h na Grande São Paulo
    ========================================================= */
 
 :root {
@@ -282,6 +282,25 @@ p {
 
 .logo__nome span {
   color: var(--azul-logo-destaque);
+}
+
+.logo__nome {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.05;
+}
+
+.logo__nome small {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.42em;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #cfe0f5;
+}
+
+.logo__nome b {
+  font-weight: 800;
 }
 
 .logo img {

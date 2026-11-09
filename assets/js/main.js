@@ -1,4 +1,4 @@
-// HidroExpress — scripts do site
+// Master Limp — scripts do site
 (function () {
   "use strict";
 
@@ -59,7 +59,7 @@
 
       var dados = new FormData(form);
       var linhas = [
-        "Olá, HidroExpress! Gostaria de um orçamento.",
+        "Olá, Desentupidora Master Limp! Gostaria de um orçamento.",
         "",
         "*Nome:* " + dados.get("nome"),
         "*Telefone:* " + dados.get("telefone"),

@@ -1,4 +1,4 @@
-# HidroExpress — Desentupidora 24h na Grande São Paulo
+# Desentupidora Master Limp — 24h na Grande São Paulo
 
 Site estático (HTML + CSS + JS puro), sem dependências e sem etapa de build.
 
